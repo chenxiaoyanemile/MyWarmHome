@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/titlebar"
+    android:background="@color/mainBlue"
+    android:layout_width="match_parent"
+    android:layout_height="45dp">
+    <TextView
+        android:id="@+id/titlebar_text_exittip"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        style="@style/titlebar_text"
+        android:layout_centerInParent="true"
+        android:text="@string/double_click_exit"
+        android:visibility="gone"/>
+    <ImageView
+        android:id="@+id/titlebar_img_back"
+        style="@style/titlebar_img"
+        android:layout_width="40dp"
+        android:layout_height="35dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="4dp"
+        android:clickable="true"
+        android:contentDescription="@null"
+        android:focusable="false"
+        android:visibility="gone"
+        android:src="@drawable/titlebar_back"/>
+    <TextView
+        android:id="@+id/titlebar_text_title"
+        style="@style/titlebar_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:maxEms="8"
+        android:singleLine="true"/>
+
+</RelativeLayout>

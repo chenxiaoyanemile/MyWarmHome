@@ -1,0 +1,28 @@
+<LinearLayout
+    android:id="@+id/main_group"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbars="none">
+
+    <include
+        android:id="@+id/titlebar"
+        layout="@layout/activity_title">
+    </include>
+
+    <include
+        android:id="@+id/foot"
+        layout="@layout/activity_foot">
+
+    </include>
+
+    <FrameLayout
+        android:id="@+id/main_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+    </FrameLayout>
+
+
+</LinearLayout>

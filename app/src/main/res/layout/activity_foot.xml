@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <FrameLayout
+        android:id="@+id/realtabcontent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@android:id/tabhost"
+        android:layout_alignParentTop="true" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="57dp"
+        android:background="@color/textGray" />
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:background="@color/white">
+        <RadioButton
+            android:id="@+id/main_fristpage"
+            android:drawableTop="@drawable/tab_firstpage_selector"
+            android:text="首页"
+            style="@style/main_tab_bottom"
+            tools:ignore="HardcodedText" />
+        <RadioButton
+            android:id="@+id/main_view"
+            android:drawableTop="@drawable/tab_view_selector"
+            android:text="视野"
+            style="@style/main_tab_bottom"
+            tools:ignore="HardcodedText" />
+        <RadioButton
+            android:id="@+id/main_share"
+            android:drawableTop="@drawable/tab_share_selector"
+            android:text="分享"
+            style="@style/main_tab_bottom"
+            tools:ignore="HardcodedText" />
+        <RadioButton
+            android:id="@+id/main_person"
+            android:drawableTop="@drawable/tab_person_selector"
+            android:text="个人"
+            style="@style/main_tab_bottom"
+            tools:ignore="HardcodedText" />
+        <RadioButton
+            android:id="@+id/main_friend"
+            android:drawableTop="@drawable/tab_friend_selector"
+            android:text="好友"
+            style="@style/main_tab_bottom"
+            tools:ignore="HardcodedText" />
+
+    </RadioGroup>
+
+
+</RelativeLayout>

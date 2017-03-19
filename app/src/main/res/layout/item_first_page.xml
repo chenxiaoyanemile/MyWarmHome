@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="7dp"
+    android:background="#ffffff">
+
+    <!--设置一个View，使得刚开始有点间隔感-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#e8eae9">
+
+    </View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:orientation="horizontal"
+        android:id="@+id/author_layout"
+        tools:ignore="UseCompoundDrawables">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="23dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/first_page_blue"
+            android:layout_marginLeft="1dp"
+            tools:ignore="ContentDescription,RtlHardcoded" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="#2f2f2f"
+            android:text="牵手世界，领跑未来，广州迷你马拉松开跑啦"
+            android:paddingTop="10dp"
+            tools:ignore="HardcodedText,SpUsage"
+            android:id="@+id/tv_item" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_item"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/ic_page"
+        tools:ignore="ContentDescription"
+        android:layout_below="@+id/author_layout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/btn_item"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:textSize="14sp"
+        android:textColor="#ffffff"
+        android:text="我要报名"
+        tools:ignore="HardcodedText,SpUsage"
+        android:layout_alignBottom="@+id/iv_item"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="19dp"
+        android:background="@color/mainBlue" />
+
+    <TextView
+        android:text="2017-06-06"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_item"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/tv_item_time"
+        tools:ignore="HardcodedText" />
+</RelativeLayout>

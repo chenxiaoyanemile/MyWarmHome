@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="7dp"
+    android:background="#ffffff">
+
+    <!--设置一个View，使得刚开始有点间隔感-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#e8eae9">
+
+    </View>
+
+    <ImageView
+        android:id="@+id/iv_item"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/ic_view"
+        tools:ignore="ContentDescription"
+       />
+
+    <TextView
+        android:id="@+id/tv_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="Hashed and Hierarchical Timing Wheels"
+        tools:ignore="HardcodedText,SpUsage"
+        />
+
+    <TextView
+        android:text="2017-06-06"
+        android:textSize="14sp"
+        android:layout_gravity="right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_item_time"
+        tools:ignore="HardcodedText,RtlHardcoded" />
+
+</LinearLayout>
